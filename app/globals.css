@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette sampled straight from the reference swatch */
+  --color-hot: #fe81d4;
+  --color-rose: #faacbf;
+  --color-blush: #fbc3c1;
+  --color-cream: #ffeabb;
+  --color-petal: #fdeef0;
+
+  /* Deep plum pulled out of the pink family, for text and edges */
+  --color-ink: #3a1b33;
+  --color-ink-soft: #6d4a64;
+  --color-ink-warm: #5a3a52; /* secondary text on cream */
+  --color-plum: #4a2442; /* raised panels on the ink band */
+  --color-plum-line: #6b4562;
+  --color-mist: #e9d3df; /* secondary text on ink */
+  --color-paper: #fffaf7;
+
+  /* Pink dark enough for text (4.5:1 on paper, petal and cream) */
+  --color-pink-ink: #b8327f;
+  --color-open: #2f8a4c;
+
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Caveat", cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Keep anchored sections clear of the sticky nav */
+  [id] {
+    scroll-margin-top: 80px;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-hot);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  /* Sticker-style offset shadows used on buttons and cards */
+  .shadow-sticker {
+    box-shadow: 4px 4px 0 0 var(--color-ink);
+  }
+
+  .shadow-sticker-sm {
+    box-shadow: 3px 3px 0 0 var(--color-ink);
+  }
+
+  .shadow-sticker-lg {
+    box-shadow: 8px 8px 0 0 var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
