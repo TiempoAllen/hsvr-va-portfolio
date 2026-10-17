@@ -17,8 +17,7 @@ export const profile = {
   email: "hello@honeysheene.com",
   calendarUrl: "https://calendly.com/your-link/discovery-call",
   socials: [
-    { label: "LinkedIn", href: "https://linkedin.com/in/your-handle" },
-    { label: "Instagram", href: "https://instagram.com/your-handle" },
+    { label: "Instagram", href: "https://www.instagram.com/_hunvr/" },
   ],
 };
 
@@ -38,7 +37,7 @@ export const about = {
     "Most of my days are spent on Instagram and TikTok — planning posts, writing captions, editing Reels and short videos in CapCut, and keeping comments and DMs answered. The rest goes to inboxes and calendars. I ask before I guess, I write down how I work as I go, and I hold a four-hour overlap with US mornings so you're never waiting on me.",
   ],
   highlight: "Instagram + TikTok",
-  chips: ["1 year as a VA", "5 accounts managed", "Replies in under 3 hrs"],
+  chips: ["1 year as a VA", "2 accounts managed", "Replies in under 3 hrs"],
 };
 
 /** The six numbered cards under "What I can take off your plate". */
@@ -75,32 +74,36 @@ export const offers = [
   },
 ] as const;
 
-export const spotlights = {
-  social: {
-    tag: "Social media · Northbay Studio",
-    handle: "@northbay.studio",
-    title: "From “whenever I remembered” to five posts a week.",
-    text: "I took over the content calendar, wrote captions in the owner's voice and scheduled everything a week ahead. The only job left on their side is approving on Mondays.",
-    results: [
-      { value: "5×", label: "posts a week" },
-      { value: "1 day", label: "of approvals, Mondays" },
-      { value: "[+00%]", label: "reach, from Insights", placeholder: true },
-    ],
-    quote: "“Same voice. I just approve on Mondays now.” — Luis F.",
+/** "The numbers so far" — figures read straight off the screenshots in public/results. */
+export const results = {
+  period: "Jul 18 – Oct 16",
+  stats: [
+    { value: "2,010,310", label: "views", change: "+142.8% vs. Jul 18" },
+    { value: "6,359", label: "followers", change: "+215.6% vs. Jul 18" },
+    { value: "687,727", label: "Instagram views in 90 days", change: "97.2% from non-followers" },
+    { value: "+1,374", label: "net Instagram followers in 90 days", change: "676K views from Reels" },
+  ],
+  screenshots: {
+    insights: {
+      src: "/results/instagram-insights-90-days.webp",
+      width: 1008,
+      height: 2000,
+      alt: "Instagram Insights, last 90 days: 687,727 views, +1,374 net followers, 97.2% of views from non-followers, 676K views from Reels",
+    },
+    followers: {
+      src: "/results/followers-growth.png",
+      width: 527,
+      height: 332,
+      alt: "Followers: 6,359, up 215.6% vs. Jul 18",
+    },
+    views: {
+      src: "/results/views-growth.png",
+      width: 668,
+      height: 674,
+      alt: "Views: 2,010,310, up 142.8% vs. Jul 18",
+    },
   },
-  executive: {
-    tag: "Executive support · Ember Coaching",
-    title: "A founder who stopped being the bottleneck.",
-    text: "Every morning I sort the inbox, flag what matters and draft replies for a quick yes or no. The calendar gets batched calls, protected focus time and buffers that actually hold.",
-    quote: "“She asks before she guesses.” — Dana O.",
-    calendar: [
-      { time: "8:00", text: "Focus block — no meetings", style: "soft" },
-      { time: "10:30", text: "Client call (moved, both sides told)", style: "accent" },
-      { time: "11:30", text: "Buffer", style: "dashed" },
-      { time: "14:00", text: "Notes + follow-ups sent ✓", style: "cream" },
-    ],
-  },
-} as const;
+};
 
 export const platforms = [
   {
@@ -128,9 +131,9 @@ export const platforms = [
 ] as const;
 
 export const platformStats = [
-  { value: "5", label: "accounts managed end to end" },
+  { value: "2", label: "accounts managed end to end" },
   { value: "1 yr", label: "posting for founders and small businesses" },
-  { value: "5×", label: "a week, the posting pace I keep for clients" },
+  { value: "305K", label: "accounts reached in 90 days on Instagram" },
 ];
 
 /** "Writing in your voice" — swap these for captions from real client accounts. */

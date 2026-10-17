@@ -2,7 +2,7 @@ import { profile } from "@/data/site";
 
 const links = [
   { href: "#about", label: "About" },
-  { href: "#work", label: "Work" },
+  { href: "#results", label: "Results" },
   { href: "#rates", label: "Rates" },
 ];
 

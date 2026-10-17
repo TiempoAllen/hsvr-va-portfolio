@@ -40,7 +40,7 @@ export default function Hero() {
             Book a discovery call
           </a>
           <a
-            href="#work"
+            href="#results"
             className="inline-flex min-h-[52px] items-center px-2 font-semibold underline underline-offset-[5px] hover:text-pink-ink"
           >
             See my work
