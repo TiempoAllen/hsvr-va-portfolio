@@ -11,10 +11,10 @@ export default function Contact() {
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <a
-            href={profile.calendarUrl}
+            href={profile.emailUrl}
             className="inline-flex min-h-[52px] items-center rounded-[14px] border-2 border-cream bg-cream px-7 font-semibold text-ink shadow-[4px_4px_0_0_var(--color-hot)] transition-transform hover:-translate-y-0.5"
           >
-            Book a 20-min call
+            Email me
           </a>
           <a
             href={`mailto:${profile.email}`}

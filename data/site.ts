@@ -3,6 +3,8 @@
  * Edit this file to make the page yours — no component changes needed.
  */
 
+const email = "repunteh@gmail.com";
+
 export const profile = {
   name: "Honey Sheene Repunte",
   shortName: "Honey Sheene",
@@ -14,8 +16,9 @@ export const profile = {
     "Virtual assistant for Instagram, TikTok and executive support. I help founders and small business owners who are behind on posting and buried in email.",
   location: "Remote · Philippines · GMT+8",
   availability: "2 client slots open",
-  email: "hello@honeysheene.com",
-  calendarUrl: "https://calendly.com/your-link/discovery-call",
+  email,
+  /** Used by the "Email me" buttons — opens a new email with the subject filled in. */
+  emailUrl: `mailto:${email}?subject=${encodeURIComponent("Virtual assistant enquiry")}`,
   socials: [
     { label: "Instagram", href: "https://www.instagram.com/_hunvr/" },
   ],

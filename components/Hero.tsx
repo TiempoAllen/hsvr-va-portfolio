@@ -34,10 +34,10 @@ export default function Hero() {
 
         <div className="mt-9 flex flex-wrap items-center gap-4">
           <a
-            href={profile.calendarUrl}
+            href={profile.emailUrl}
             className="inline-flex min-h-[52px] items-center rounded-[14px] border-2 border-ink bg-cream px-7 font-semibold shadow-sticker transition-transform hover:-translate-y-0.5"
           >
-            Book a discovery call
+            Email me
           </a>
           <a
             href="#results"
